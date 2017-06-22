@@ -1,0 +1,104 @@
+<?php
+require_once __DIR__ . '/Workerman/Autoloader.php';
+use Workerman\Worker;
+
+$clinets = [];//客户端列表
+$gprss = [];//gprs模块列表
+
+// 创建一个Worker监听2345端口，使用http协议通讯
+$ServerType = 'websocket';
+$Serverip = '127.0.0.1';//用于浏览器的访问的ip
+$ServerPort = '9091';//用于浏览器的访问的端口
+
+$server = new Worker($ServerType.'://'.$Serverip.':'.$ServerPort);
+$server->count = 1;
+
+$GPRSPort = '9092';
+$GPRSType = 'tcp';
+$GPRS = new Worker($GPRSType.'://'.$Serverip.':'.$GPRSPort);
+
+function syncUsers()//同步登录用户列表
+{
+    global $clinets;
+    $users = 'users:'.json_encode(array_column($clinets,'connectinfo'));
+    foreach ($clinets as $ip=>$set)
+    {
+        $set['conn']->send($users);
+    }
+    var_export($users).PHP_EOL;
+}
+
+$server->onMessage = function($connection, $data)
+{
+    global $Serverip;
+    global $ServerPort;
+    global $clinets;
+    $ip = $connection->getRemoteIp();
+    $port = $connection->getRemotePort();
+    //nD[Browser][127.0.0.1:9091][CMD]:ClinetLogin
+    if(preg_match('/^nD\[(?<clinet>.*?)\]\[(?<IP>\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}):(?<Port>\d{1,6})\]\[(?<type>\w{1,10})\]:(?<data>.*)/',$data,$res))
+    {
+        if($res['type'] == 'CMD')
+        {
+            if($res['data'] == 'ClinetLogin')
+            {
+                if(!array_key_exists($ip.':'.$port,$clinets)) {
+                    echo PHP_EOL.'new IP info'.PHP_EOL;
+                    $clinets[$ip.':'.$port] = [
+                        'instrument' => 'Browser',
+                        'connectinfo' => $ip.':'.$port,
+                        'conn' => $connection,
+                    ];
+                    $connection->send('nD[Server]['.$Serverip.':'.$ServerPort.'][REP]:Connection Established!your IPinfo：'.$ip.':'.$port);
+                    syncUsers();
+                }
+            }
+            if($res['data'] == 'synUsers')
+            {
+                syncUsers();
+            }
+            if(preg_match('/^dst:(?<desinfo>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\:\d{1,6})$/',$res['data'],$match))
+            {
+                if(array_key_exists($ip.':'.$port,$clinets))//将对象加入
+                {
+                    $clinets[$ip.':'.$port] = [
+                        'instrument' => 'Browser',
+                        'connectinfo' => $ip.':'.$port,
+                        'conn' => $connection,
+                        'desinfo' => $match[1]
+                    ];
+                    echo 'new'.$ip.':'.$port.' set destination:'.$clinets[$ip.':'.$port]['desinfo'].PHP_EOL;
+                    $connection->send('nD[Server]['.$Serverip.':'.$ServerPort
+                        .'][REP]:destination set：'.$clinets[$ip.':'.$port]['desinfo']);
+                    //var_export($clinets[$ip.':'.$port]);
+                }
+            }
+        }
+        if($res['type'] == 'DATA')
+        {
+            $desIPPort = $clinets[$ip.':'.$port]['desinfo'];
+            $instrument = $clinets[$ip.':'.$port]['instrument'];
+            $desconn = $clinets[$desIPPort]['conn'];
+            ///^nD\[Server\]\[127.0.0.1\]\[9091\]\[DATA\]/
+            $desconn -> send('nD['.$instrument.']['.$ip.':'.$port.'][DATA]:'.$res['data']);
+        }
+    }
+    else
+    {
+        $connection->send('Connection ERROR!');
+    }
+
+};
+
+$server->onClose = function ($connection)
+{
+    $ip = $connection->getRemoteIp();
+    $port = $connection->getRemotePort();
+    global $clinets;
+    unset($clinets[$ip.':'.$port]);
+    syncUsers();
+};
+
+
+
+Worker::runAll();

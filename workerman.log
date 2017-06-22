@@ -1,0 +1,330 @@
+2017-06-19 21:24:05 pid:20342 Workerman[server.ser] start in DEBUG mode
+2017-06-19 21:46:15 pid:20342 Workerman[server.ser] Stopping ...
+2017-06-19 21:46:15 pid:20342 Workerman[server.ser] has been stopped
+2017-06-20 13:57:11 pid:4364 Workerman[server.ser] start in DEBUG mode
+2017-06-20 14:06:09 pid:4364 Workerman[server.ser] Stopping ...
+2017-06-20 14:06:09 pid:4364 Workerman[server.ser] has been stopped
+2017-06-20 14:06:16 pid:4874 Workerman[server.ser] start in DEBUG mode
+2017-06-20 17:45:49 pid:2412 Workerman[server.ser] start in DEBUG mode
+2017-06-21 09:14:19 pid:15641 Workerman[server.ser] start in DEBUG mode
+2017-06-21 09:55:08 pid:15641 Workerman[server.ser] Stopping ...
+2017-06-21 09:55:08 pid:15641 Workerman[server.ser] has been stopped
+2017-06-21 09:55:10 pid:18878 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:05:22 pid:18878 Workerman[server.ser] Stopping ...
+2017-06-21 10:05:22 pid:18878 Workerman[server.ser] has been stopped
+2017-06-21 10:05:23 pid:20132 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:06:13 pid:20132 Workerman[server.ser] Stopping ...
+2017-06-21 10:06:13 pid:20132 Workerman[server.ser] has been stopped
+2017-06-21 10:06:16 pid:20246 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:13:27 pid:20246 Workerman[server.ser] Stopping ...
+2017-06-21 10:13:27 pid:20246 Workerman[server.ser] has been stopped
+2017-06-21 10:13:27 pid:20833 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:14:00 pid:20833 Workerman[server.ser] Stopping ...
+2017-06-21 10:14:00 pid:20833 Workerman[server.ser] has been stopped
+2017-06-21 10:14:01 pid:20838 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:28:34 pid:20838 Workerman[server.ser] Stopping ...
+2017-06-21 10:28:34 pid:20838 Workerman[server.ser] has been stopped
+2017-06-21 10:28:35 pid:21481 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:30:57 pid:21481 Workerman[server.ser] Stopping ...
+2017-06-21 10:30:57 pid:21481 Workerman[server.ser] has been stopped
+2017-06-21 10:31:08 pid:21510 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:34:43 pid:21510 Workerman[server.ser] Stopping ...
+2017-06-21 10:34:43 pid:21510 Workerman[server.ser] has been stopped
+2017-06-21 10:34:45 pid:21548 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:35:10 pid:21548 Workerman[server.ser] Stopping ...
+2017-06-21 10:35:10 pid:21548 Workerman[server.ser] has been stopped
+2017-06-21 10:35:11 pid:21558 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:35:47 pid:21558 Workerman[server.ser] Stopping ...
+2017-06-21 10:35:47 pid:21558 Workerman[server.ser] has been stopped
+2017-06-21 10:35:48 pid:21567 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:36:29 pid:21567 Workerman[server.ser] Stopping ...
+2017-06-21 10:36:29 pid:21567 Workerman[server.ser] has been stopped
+2017-06-21 10:36:30 pid:21582 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:38:24 pid:21582 Workerman[server.ser] Stopping ...
+2017-06-21 10:38:24 pid:21582 Workerman[server.ser] has been stopped
+2017-06-21 10:38:25 pid:21624 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:38:48 pid:21624 Workerman[server.ser] Stopping ...
+2017-06-21 10:38:48 pid:21624 Workerman[server.ser] has been stopped
+2017-06-21 10:38:51 pid:21635 Workerman[server.ser] start in DEBUG mode
+2017-06-21 10:43:04 pid:21635 Workerman[server.ser] Stopping ...
+2017-06-21 10:43:04 pid:21635 Workerman[server.ser] has been stopped
+2017-06-21 10:43:04 pid:21738 Workerman[server.ser] start in DEBUG mode
+2017-06-21 11:00:58 pid:21738 Workerman[server.ser] Stopping ...
+2017-06-21 11:00:58 pid:21738 Workerman[server.ser] has been stopped
+2017-06-21 11:00:59 pid:21880 Workerman[server.ser] start in DEBUG mode
+2017-06-21 11:04:37 pid:21880 Workerman[server.ser] Stopping ...
+2017-06-21 11:04:37 pid:21880 Workerman[server.ser] has been stopped
+2017-06-21 11:04:39 pid:21933 Workerman[server.ser] start in DEBUG mode
+2017-06-21 11:05:40 pid:21933 Workerman[server.ser] Stopping ...
+2017-06-21 11:05:40 pid:21933 Workerman[server.ser] has been stopped
+2017-06-21 11:05:40 pid:21951 Workerman[server.ser] start in DEBUG mode
+2017-06-21 11:30:25 pid:21951 Workerman[server.ser] Stopping ...
+2017-06-21 11:30:25 pid:21951 Workerman[server.ser] has been stopped
+2017-06-21 11:30:32 pid:22373 Workerman[server.ser] start in DEBUG mode
+2017-06-21 11:49:03 pid:22373 Workerman[server.ser] Stopping ...
+2017-06-21 11:49:03 pid:22373 Workerman[server.ser] has been stopped
+2017-06-21 11:49:14 pid:22688 Workerman[server.ser] start in DEBUG mode
+2017-06-21 12:28:52 pid:22688 Workerman[server.ser] Stopping ...
+2017-06-21 12:28:52 pid:22688 Workerman[server.ser] has been stopped
+2017-06-21 12:28:53 pid:23332 Workerman[server.ser] start in DEBUG mode
+2017-06-21 12:29:12 pid:23340 Workerman[server.ser] start in DEBUG mode
+2017-06-21 12:29:32 pid:23346 Workerman[server.ser] start in DEBUG mode
+2017-06-21 12:30:51 pid:23346 Workerman[server.ser] Stopping ...
+2017-06-21 12:30:51 pid:23346 Workerman[server.ser] has been stopped
+2017-06-21 12:31:00 pid:23375 Workerman[server.ser] start in DEBUG mode
+2017-06-21 13:25:59 pid:23375 Workerman[server.ser] Stopping ...
+2017-06-21 13:25:59 pid:23375 Workerman[server.ser] has been stopped
+2017-06-21 13:26:02 pid:24251 Workerman[server.ser] start in DEBUG mode
+2017-06-21 14:13:12 pid:24251 Workerman[server.ser] Stopping ...
+2017-06-21 14:13:12 pid:24251 Workerman[server.ser] has been stopped
+2017-06-21 14:13:15 pid:24874 Workerman[server.ser] start in DEBUG mode
+2017-06-21 14:31:51 pid:24874 Workerman[server.ser] Stopping ...
+2017-06-21 14:31:51 pid:24874 Workerman[server.ser] has been stopped
+2017-06-21 14:32:17 pid:25208 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:05:31 pid:25208 Workerman[server.ser] Stopping ...
+2017-06-21 15:05:31 pid:25208 Workerman[server.ser] has been stopped
+2017-06-21 15:05:32 pid:25772 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:06:32 pid:25772 Workerman[server.ser] Stopping ...
+2017-06-21 15:06:32 pid:25772 Workerman[server.ser] has been stopped
+2017-06-21 15:06:33 pid:25794 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:08:18 pid:25794 Workerman[server.ser] Stopping ...
+2017-06-21 15:08:18 pid:25794 Workerman[server.ser] has been stopped
+2017-06-21 15:08:19 pid:25821 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:09:21 pid:25821 Workerman[server.ser] Stopping ...
+2017-06-21 15:09:21 pid:25821 Workerman[server.ser] has been stopped
+2017-06-21 15:09:21 pid:25892 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:10:46 pid:25892 Workerman[server.ser] Stopping ...
+2017-06-21 15:10:46 pid:25892 Workerman[server.ser] has been stopped
+2017-06-21 15:10:48 pid:25914 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:11:33 pid:25914 Workerman[server.ser] Stopping ...
+2017-06-21 15:11:33 pid:25914 Workerman[server.ser] has been stopped
+2017-06-21 15:11:34 pid:25934 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:12:09 pid:25934 Workerman[server.ser] Stopping ...
+2017-06-21 15:12:09 pid:25934 Workerman[server.ser] has been stopped
+2017-06-21 15:12:10 pid:25943 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:15:26 pid:25943 Workerman[server.ser] Stopping ...
+2017-06-21 15:15:26 pid:25943 Workerman[server.ser] has been stopped
+2017-06-21 15:15:27 pid:26017 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:16:34 pid:26017 Workerman[server.ser] Stopping ...
+2017-06-21 15:16:34 pid:26017 Workerman[server.ser] has been stopped
+2017-06-21 15:16:35 pid:26033 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:18:12 pid:26033 Workerman[server.ser] Stopping ...
+2017-06-21 15:18:12 pid:26033 Workerman[server.ser] has been stopped
+2017-06-21 15:18:13 pid:26054 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:28:14 pid:26054 Workerman[server.ser] Stopping ...
+2017-06-21 15:28:14 pid:26054 Workerman[server.ser] has been stopped
+2017-06-21 15:28:14 pid:26152 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:28:28 pid:26154 Exception: You can't send(NULL) to client, you need to convert it to a string.  in /home/soez/WorkSpace/WebTest5791/Workerman/Protocols/Websocket.php:225
+Stack trace:
+#0 /home/soez/WorkSpace/WebTest5791/Workerman/Connection/TcpConnection.php(260): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 /home/soez/WorkSpace/WebTest5791/server.ser(44): Workerman\Connection\TcpConnection->send(NULL)
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#3 /home/soez/WorkSpace/WebTest5791/Workerman/Connection/TcpConnection.php(480): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#5 /home/soez/WorkSpace/WebTest5791/Workerman/Events/Select.php(282): call_user_func_array(Array, Array)
+#6 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(1569): Workerman\Events\Select->loop()
+#7 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(959): Workerman\Worker->run()
+#8 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(922): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#9 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#10 /home/soez/WorkSpace/WebTest5791/server.ser(62): Workerman\Worker::runAll()
+#11 {main}
+2017-06-21 15:28:28 pid:26154 WORKER EXIT UNEXPECTED 
+2017-06-21 15:28:28 pid:26152 worker[none:26154] exit with status 64000
+2017-06-21 15:29:02 pid:26152 Workerman[server.ser] Stopping ...
+2017-06-21 15:29:02 pid:26152 Workerman[server.ser] has been stopped
+2017-06-21 15:29:03 pid:26171 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:29:12 pid:26172 Exception: You can't send(NULL) to client, you need to convert it to a string.  in /home/soez/WorkSpace/WebTest5791/Workerman/Protocols/Websocket.php:225
+Stack trace:
+#0 /home/soez/WorkSpace/WebTest5791/Workerman/Connection/TcpConnection.php(260): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 /home/soez/WorkSpace/WebTest5791/server.ser(45): Workerman\Connection\TcpConnection->send(NULL)
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#3 /home/soez/WorkSpace/WebTest5791/Workerman/Connection/TcpConnection.php(480): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#5 /home/soez/WorkSpace/WebTest5791/Workerman/Events/Select.php(282): call_user_func_array(Array, Array)
+#6 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(1569): Workerman\Events\Select->loop()
+#7 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(959): Workerman\Worker->run()
+#8 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(922): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#9 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#10 /home/soez/WorkSpace/WebTest5791/server.ser(63): Workerman\Worker::runAll()
+#11 {main}
+2017-06-21 15:29:12 pid:26172 WORKER EXIT UNEXPECTED 
+2017-06-21 15:29:12 pid:26171 worker[none:26172] exit with status 64000
+2017-06-21 15:30:05 pid:26171 Workerman[server.ser] Stopping ...
+2017-06-21 15:30:05 pid:26171 Workerman[server.ser] has been stopped
+2017-06-21 15:30:06 pid:26194 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:32:42 pid:26194 Workerman[server.ser] Stopping ...
+2017-06-21 15:32:42 pid:26194 Workerman[server.ser] has been stopped
+2017-06-21 15:32:43 pid:26248 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:33:16 pid:26248 Workerman[server.ser] Stopping ...
+2017-06-21 15:33:16 pid:26248 Workerman[server.ser] has been stopped
+2017-06-21 15:33:17 pid:26265 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:33:58 pid:26265 Workerman[server.ser] Stopping ...
+2017-06-21 15:33:58 pid:26265 Workerman[server.ser] has been stopped
+2017-06-21 15:33:59 pid:26284 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:34:27 pid:26284 Workerman[server.ser] Stopping ...
+2017-06-21 15:34:27 pid:26284 Workerman[server.ser] has been stopped
+2017-06-21 15:34:28 pid:26307 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:35:08 pid:26307 Workerman[server.ser] Stopping ...
+2017-06-21 15:35:08 pid:26307 Workerman[server.ser] has been stopped
+2017-06-21 15:35:08 pid:26320 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:37:35 pid:26320 Workerman[server.ser] Stopping ...
+2017-06-21 15:37:35 pid:26320 Workerman[server.ser] has been stopped
+2017-06-21 15:37:36 pid:26360 Workerman[server.ser] start in DEBUG mode
+2017-06-21 15:38:32 pid:26360 Workerman[server.ser] Stopping ...
+2017-06-21 15:38:32 pid:26360 Workerman[server.ser] has been stopped
+2017-06-21 15:38:33 pid:26391 Workerman[server.ser] start in DEBUG mode
+2017-06-21 17:07:55 pid:26391 Workerman[server.ser] Stopping ...
+2017-06-21 17:07:55 pid:26391 Workerman[server.ser] has been stopped
+2017-06-21 17:07:56 pid:27856 Workerman[server.ser] start in DEBUG mode
+2017-06-21 17:09:32 pid:27856 Workerman[server.ser] Stopping ...
+2017-06-21 17:09:32 pid:27856 Workerman[server.ser] has been stopped
+2017-06-21 17:09:33 pid:27939 Workerman[server.ser] start in DEBUG mode
+2017-06-21 17:21:35 pid:27939 Workerman[server.ser] Stopping ...
+2017-06-21 17:21:35 pid:27939 Workerman[server.ser] has been stopped
+2017-06-21 17:21:36 pid:28109 Workerman[server.ser] start in DEBUG mode
+2017-06-21 17:22:53 pid:28109 Workerman[server.ser] Stopping ...
+2017-06-21 17:22:53 pid:28109 Workerman[server.ser] has been stopped
+2017-06-21 17:22:55 pid:28125 Workerman[server.ser] start in DEBUG mode
+2017-06-21 17:26:46 pid:28125 Workerman[server.ser] Stopping ...
+2017-06-21 17:26:46 pid:28125 Workerman[server.ser] has been stopped
+2017-06-21 17:26:48 pid:28176 Workerman[server.ser] start in DEBUG mode
+2017-06-21 17:30:25 pid:28176 Workerman[server.ser] Stopping ...
+2017-06-21 17:30:25 pid:28176 Workerman[server.ser] has been stopped
+2017-06-21 17:30:25 pid:28231 Workerman[server.ser] start in DEBUG mode
+2017-06-21 17:38:26 pid:28231 Workerman[server.ser] Stopping ...
+2017-06-21 17:38:26 pid:28231 Workerman[server.ser] has been stopped
+2017-06-21 17:38:26 pid:28326 Workerman[server.ser] start in DEBUG mode
+2017-06-22 09:42:33 pid:2656 Workerman[server.ser] start in DEBUG mode
+2017-06-22 09:44:13 pid:2656 Workerman[server.ser] Stopping ...
+2017-06-22 09:44:13 pid:2656 Workerman[server.ser] has been stopped
+2017-06-22 09:44:27 pid:2850 Workerman[server.ser] start in DEBUG mode
+2017-06-22 09:45:49 pid:2850 Workerman[server.ser] Stopping ...
+2017-06-22 09:45:49 pid:2850 Workerman[server.ser] has been stopped
+2017-06-22 09:45:50 pid:2920 Workerman[server.ser] start in DEBUG mode
+2017-06-22 09:49:01 pid:2920 Workerman[server.ser] Stopping ...
+2017-06-22 09:49:02 pid:2920 Workerman[server.ser] has been stopped
+2017-06-22 09:49:02 pid:2984 Workerman[server.ser] start in DEBUG mode
+2017-06-22 10:31:43 pid:2984 Workerman[server.ser] Stopping ...
+2017-06-22 10:31:43 pid:2984 Workerman[server.ser] has been stopped
+2017-06-22 10:31:44 pid:3711 Workerman[server.ser] start in DEBUG mode
+2017-06-22 10:36:51 pid:3711 Workerman[server.ser] Stopping ...
+2017-06-22 10:36:51 pid:3711 Workerman[server.ser] has been stopped
+2017-06-22 10:36:52 pid:3837 Workerman[server.ser] start in DEBUG mode
+2017-06-22 10:38:57 pid:3837 Workerman[server.ser] Stopping ...
+2017-06-22 10:38:57 pid:3837 Workerman[server.ser] has been stopped
+2017-06-22 10:39:28 pid:3939 Workerman[server.ser] start in DEBUG mode
+2017-06-22 10:39:38 pid:3940 Error: Call to undefined function array_key_exitst() in /home/soez/WorkSpace/WebTest5791/server.ser:61
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#1 /home/soez/WorkSpace/WebTest5791/Workerman/Connection/TcpConnection.php(480): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#3 /home/soez/WorkSpace/WebTest5791/Workerman/Events/Select.php(282): call_user_func_array(Array, Array)
+#4 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(1569): Workerman\Events\Select->loop()
+#5 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(959): Workerman\Worker->run()
+#6 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(922): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#7 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#8 /home/soez/WorkSpace/WebTest5791/server.ser(94): Workerman\Worker::runAll()
+#9 {main}
+2017-06-22 10:39:38 pid:3940 WORKER EXIT UNEXPECTED 
+2017-06-22 10:39:38 pid:3939 worker[none:3940] exit with status 64000
+2017-06-22 10:39:59 pid:3939 Workerman[server.ser] Stopping ...
+2017-06-22 10:39:59 pid:3939 Workerman[server.ser] has been stopped
+2017-06-22 10:40:00 pid:3969 Workerman[server.ser] start in DEBUG mode
+2017-06-22 10:40:06 pid:3970 Error: Call to a member function send() on null in /home/soez/WorkSpace/WebTest5791/server.ser:26
+Stack trace:
+#0 /home/soez/WorkSpace/WebTest5791/server.ser(56): syncUsers()
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#2 /home/soez/WorkSpace/WebTest5791/Workerman/Connection/TcpConnection.php(480): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#4 /home/soez/WorkSpace/WebTest5791/Workerman/Events/Select.php(282): call_user_func_array(Array, Array)
+#5 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(1569): Workerman\Events\Select->loop()
+#6 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(959): Workerman\Worker->run()
+#7 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(922): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#8 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#9 /home/soez/WorkSpace/WebTest5791/server.ser(94): Workerman\Worker::runAll()
+#10 {main}
+2017-06-22 10:40:06 pid:3970 WORKER EXIT UNEXPECTED 
+2017-06-22 10:40:06 pid:3969 worker[none:3970] exit with status 64000
+2017-06-22 10:41:09 pid:3969 Workerman[server.ser] Stopping ...
+2017-06-22 10:41:09 pid:3969 Workerman[server.ser] has been stopped
+2017-06-22 10:41:19 pid:3995 Workerman[server.ser] start in DEBUG mode
+2017-06-22 10:41:40 pid:3996 Error: Call to a member function send() on null in /home/soez/WorkSpace/WebTest5791/server.ser:26
+Stack trace:
+#0 /home/soez/WorkSpace/WebTest5791/server.ser(56): syncUsers()
+#1 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#2 /home/soez/WorkSpace/WebTest5791/Workerman/Connection/TcpConnection.php(480): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #23)
+#4 /home/soez/WorkSpace/WebTest5791/Workerman/Events/Select.php(282): call_user_func_array(Array, Array)
+#5 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(1569): Workerman\Events\Select->loop()
+#6 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(959): Workerman\Worker->run()
+#7 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(922): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#8 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#9 /home/soez/WorkSpace/WebTest5791/server.ser(94): Workerman\Worker::runAll()
+#10 {main}
+2017-06-22 10:41:40 pid:3996 WORKER EXIT UNEXPECTED 
+2017-06-22 10:41:40 pid:3995 worker[none:3996] exit with status 64000
+2017-06-22 10:42:54 pid:3995 Workerman[server.ser] Stopping ...
+2017-06-22 10:42:54 pid:3995 Workerman[server.ser] has been stopped
+2017-06-22 10:42:55 pid:4032 Workerman[server.ser] start in DEBUG mode
+2017-06-22 10:53:57 pid:4032 Workerman[server.ser] Stopping ...
+2017-06-22 10:53:57 pid:4032 Workerman[server.ser] has been stopped
+2017-06-22 10:53:58 pid:4131 Workerman[server.ser] start in DEBUG mode
+2017-06-22 10:56:34 pid:4131 Workerman[server.ser] Stopping ...
+2017-06-22 10:56:34 pid:4131 Workerman[server.ser] has been stopped
+2017-06-22 10:56:35 pid:4173 Workerman[server.ser] start in DEBUG mode
+2017-06-22 11:41:43 pid:4173 Workerman[server.ser] Stopping ...
+2017-06-22 11:41:44 pid:4173 Workerman[server.ser] has been stopped
+2017-06-22 11:41:44 pid:4944 Workerman[server.ser] start in DEBUG mode
+2017-06-22 16:35:11 pid:2472 Workerman[server.ser] start in DEBUG mode
+2017-06-22 16:51:11 pid:2472 Workerman[server.ser] Stopping ...
+2017-06-22 16:51:11 pid:2472 Workerman[server.ser] has been stopped
+2017-06-22 16:51:12 pid:2726 Workerman[server.ser] start in DEBUG mode
+2017-06-22 17:16:28 pid:2726 Workerman[server.ser] Stopping ...
+2017-06-22 17:16:28 pid:2726 Workerman[server.ser] has been stopped
+2017-06-22 17:16:29 pid:3156 Workerman[server.ser] start in DEBUG mode
+2017-06-22 17:18:18 pid:3156 Workerman[server.ser] Stopping ...
+2017-06-22 17:18:19 pid:3156 Workerman[server.ser] has been stopped
+2017-06-22 17:18:19 pid:3291 Workerman[server.ser] start in DEBUG mode
+2017-06-22 17:27:21 pid:3292 Error: Call to a member function send() on null in /home/soez/WorkSpace/WebTest5791/server.ser:82
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#1 /home/soez/WorkSpace/WebTest5791/Workerman/Connection/TcpConnection.php(480): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #35)
+#3 /home/soez/WorkSpace/WebTest5791/Workerman/Events/Select.php(282): call_user_func_array(Array, Array)
+#4 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(1569): Workerman\Events\Select->loop()
+#5 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(959): Workerman\Worker->run()
+#6 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(922): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#7 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#8 /home/soez/WorkSpace/WebTest5791/server.ser(104): Workerman\Worker::runAll()
+#9 {main}
+2017-06-22 17:27:21 pid:3292 WORKER EXIT UNEXPECTED 
+2017-06-22 17:27:21 pid:3291 worker[none:3292] exit with status 64000
+2017-06-22 17:28:47 pid:3291 Workerman[server.ser] Stopping ...
+2017-06-22 17:28:47 pid:3291 Workerman[server.ser] has been stopped
+2017-06-22 17:28:48 pid:4537 Workerman[server.ser] start in DEBUG mode
+2017-06-22 17:47:55 pid:4537 Workerman[server.ser] Stopping ...
+2017-06-22 17:47:55 pid:4537 Workerman[server.ser] has been stopped
+2017-06-22 17:47:55 pid:5747 Workerman[server.ser] start in DEBUG mode
+2017-06-22 17:56:57 pid:5747 Workerman[server.ser] Stopping ...
+2017-06-22 17:56:57 pid:5747 Workerman[server.ser] has been stopped
+2017-06-22 17:56:57 pid:5879 Workerman[server.ser] start in DEBUG mode
+2017-06-22 17:59:02 pid:5879 Workerman[server.ser] Stopping ...
+2017-06-22 17:59:02 pid:5879 Workerman[server.ser] has been stopped
+2017-06-22 17:59:03 pid:5912 Workerman[server.ser] start in DEBUG mode
+2017-06-22 18:01:37 pid:5912 Workerman[server.ser] Stopping ...
+2017-06-22 18:01:37 pid:5912 Workerman[server.ser] has been stopped
+2017-06-22 18:01:38 pid:5954 Workerman[server.ser] start in DEBUG mode
+2017-06-22 18:04:46 pid:5955 Error: Call to a member function send() on null in /home/soez/WorkSpace/WebTest5791/server.ser:83
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#1 /home/soez/WorkSpace/WebTest5791/Workerman/Connection/TcpConnection.php(480): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'nD[Browser][127...')
+#2 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #27)
+#3 /home/soez/WorkSpace/WebTest5791/Workerman/Events/Select.php(282): call_user_func_array(Array, Array)
+#4 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(1569): Workerman\Events\Select->loop()
+#5 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(959): Workerman\Worker->run()
+#6 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(922): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#7 /home/soez/WorkSpace/WebTest5791/Workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#8 /home/soez/WorkSpace/WebTest5791/server.ser(104): Workerman\Worker::runAll()
+#9 {main}
+2017-06-22 18:04:46 pid:5955 WORKER EXIT UNEXPECTED 
+2017-06-22 18:04:46 pid:5954 worker[none:5955] exit with status 64000

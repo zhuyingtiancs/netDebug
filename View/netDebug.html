@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EGenius netDebuger v0.1</title>
+</head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>EGenius netDebug v0.1</title>
+
+
+ <link href="../index.php" rel="stylesheet" />
+
+    <link href="View/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="View/js/jq.js"></script>
+    <script src="View/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .panel-body-send{height:120px}
+    .panel-body-get{height:400px}
+</style>
+<body>
+<div class="container-fluid">
+    <div class="row clearfix">
+<!--页头-->
+        <div class="jumbotron container-fluid" style="color: white ;background: dodgerblue;width: 100%">
+            <h2>
+                EGenius netDebuger v0.1
+            </h2>
+            <div class="col-md-10"></div>
+            <div class="col-md-2">
+                by soez
+            </div>
+        </div>
+<!--操作部分-->
+        <div class="col-md-12 column" >
+            <div class="row clearfix">
+<!--控制台-->
+                <div class="col-md-3 column">
+                    <div class="btn-group" data-toggle="buttons" onclick="connectType()">
+
+                            <input type="radio" name="options" id="option1" autocomplete="off" >客户端模式
+                            <input type="radio" name="options" id="option2" autocomplete="off" >服务端模式
+                    </div>
+
+<!--连接选项-->
+                    <div class="btn-group " role="group" style="width: 100%;margin-top: 20px">
+                        <button type="button" class="btn  btn-danger btn-lg ctrl" style="width: 30%" id="stop" onclick="stop()">
+                            <span class="glyphicon glyphicon-off" aria-hidden="true">断开</span></button>
+                        <button type="button" class="btn btn-danger btn-lg ctrl" style="width: 40%" id="start" onclick="start()">
+                            <span class="glyphicon glyphicon-play" aria-hidden="true">开始</span></button>
+                        <button type="button" class="btn btn-danger btn-lg ctrl" style="width: 30%" id="pause" onclick="pause()">
+                            <span class="glyphicon glyphicon-pause" aria-hidden="true">暂停</span></button>
+                    </div>
+
+<!--用户列表-->
+                    <div id="ServerMode" style="margin-top: 20px"><h4>选择在线用户:</h4>
+                        <select  style="width: 100%" id="listusers" value="连接后选择目标">连接后选择目标</select>
+                    </div>
+<!--目标地址-->
+                        <div class="row clearfix" style="margin-top: 20px" id="ClinetMode">
+                            <div class="col-md-8 column">
+                                <h4>目标IP地址：</h4>
+                            </div>
+                            <div class="col-md-4 column">
+                                <h4>端口号：</h4>
+                            </div>
+                            <div class="col-md-8 column">
+                                <input type="text" class="form-control" style="margin-top: 5px" id="ipAddress"
+                                       placeholder="IP Address" aria-describedby="basic-addon2">
+                            </div>
+                            <div class="col-md-4 column">
+                                <input type="text" class="form-control" style="margin-top: 5px" id="portDestination"
+                                       placeholder="Port" aria-describedby="basic-addon2">
+                            </div>
+                        </div>
+                    <button class="btn btn-primary " type="button"  style="width: 100%;margin-top: 20px" onclick="subdes()">
+                        提交目标
+                    </button>
+<!--控制台-->
+                        <div class="btn-group" style="width: 100%">
+                            <button class="btn btn-info btn-lg dropdown-toggle"
+                                    type="button" id="protocol" style="width: 100%;margin-top: 20px" value='default'
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    选择协议类型
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="width: 100%" >
+                                <li><a href="#" onclick="showType('TCP')">TCP</a></li>
+                                <li><a href="#" onclick="showType('HTTP')">HTTP</a></li>
+                                <li><a href="#" onclick="showType('WebSocket')">WebSocket</a></li>
+                                <li><a href="#" style="color: darkred" onclick="showType('UserDefine')">自定义协议</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div style="width: 100%;margin-top: 20px">
+                            <input type="checkbox"><span style="font-size: 20px">十六进制显示</span>
+                        </div>
+                </div>
+
+<!--显示-->
+                <div class="col-md-9 column">
+<!--数据框-->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">数据框</h3>
+                        </div>
+                        <div class="panel-body-get" >
+                            <div style="height: 60%" >
+                                <div id="showData" style="height: 400px;overflow: auto" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix" style="height:300px">
+<!-- 发送框-->
+                        <div class="col-md-10 column">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">发送框</h3>
+                                </div>
+                                <div class="panel-body" >
+                                    <textarea type="text" class="form-control" rows="3" style="height: 120px" id="sendText"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 column">
+                            <button type="button" class="btn btn-danger btn-lg" id="send" style="width: 100%;height: 100%" disabled onclick="send()">
+                                <span class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true" >发送</span></button>
+                            <input type="checkbox"><span style="font-size: 20px" >十六进制发送</span>
+                        </div>
+
+                    </div>
+
+                </div>
+<!--模态框:警告-->
+                <div class="modal fade" id="dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">提示</h4>
+                            </div>
+                            <div class="modal-body" id="dialogText">
+                               默认对话
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--模态框：登录-->
+                <div class="modal fade" id="usrlogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">提示</h4>
+                            </div>
+                            <div class="modal-body" id="dialogText">
+                                请输入认证码:
+                                <input type="text" class="form-control" style="margin-top: 5px" id="loginCode"
+                                       placeholder="LoginCode" aria-describedby="basic-addon2">
+                                    <button type="button" class="btn btn-primary" style="margin-top: 10px;margin-left:70%;width:15%" id="usrlogin"  onclick="userLog()">GO</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" style="margin-top:10px" id="logClose" disabled>Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    var ServerMode = $('#ServerMode');//服务端模式
+    var ClinetMode = $('#ClinetMode');//客户端模式
+    var radio = $("input[name='options']");//获取单选框的值
+    var selectDes = $('#listusers');
+    var msg_bak = '请输入';
+    var msg;
+    var islogin;
+    var localinfo;
+
+    $(document).ready(function(){
+        ServerMode.hide();
+        ClinetMode.hide();
+        $('#protocol').hide()
+        //用户登录
+//        if(!islogin)
+//        {
+//            $('#usrlogin').modal('toggle');
+//        }
+        //对象选择框事件
+//        selectDes.bind('change',function () {
+//            if(selectDes.val() != localinfo)
+//            {
+//                socket.send("nD[Browser][127.0.0.1][9091][CMD]:dst:"+selectDes.val());
+//            }
+//        })
+    })
+
+    function connectType() //选择客户端
+    {
+        if(radio[0].checked)
+        {
+            ServerMode.hide();
+            ClinetMode.fadeIn()
+        }
+        else
+        {
+            $('#protocol').hide()
+            ServerMode.fadeIn();
+            ClinetMode.hide();
+        }
+    }
+
+    function subdes() //目标地址提交
+    {
+        $('#send').removeAttr('disabled');
+        socket.send("nD[Browser][127.0.0.1:9091][CMD]:dst:"+selectDes.val());
+    }
+
+    function isValidIP(ip)//IP地址检测
+    {
+        var reg =  /^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/
+        return reg.test(ip);
+    }
+
+    function addMsg(add) //错误信息添加
+    {
+        if(msg!='请输入') msg += '/';
+        msg += add;
+    }
+
+    function sendCheck(ip,portDestination,portlocal) //连接配置检查
+    {
+        msg = msg_bak;
+        if(!(radio[0].checked||radio[1].checked))
+        {
+            addMsg('连接模式');
+        }
+        else if(radio[0].checked)
+        {
+            if(!isValidIP(ip))
+            {
+                addMsg('合法IP地址');
+            }
+            if(portDestination=='')
+            {
+                addMsg('端口号');
+            }
+            if($('#protocol').val()=='default')
+            {
+                addMsg('协议类型');
+            }
+        }
+        if(msg != msg_bak)
+        {
+            $('#dialogText').html(msg);
+            $('#dialog').modal('toggle');
+            return false;
+        }
+        else
+            return true;
+    }
+
+    function showType(type)//连接方式显示
+    {
+        $('#protocol').html(type);
+        $('#protocol').attr("value",type);
+    }
+
+    function start()//连接服务器
+    {
+        var ip = $('#ipAddress').val();
+        var portDestination = $('#portDestination').val();
+        var portlocal = $('#portLocal').val();
+        if(sendCheck(ip,portDestination,portlocal))
+        {
+
+            socket=new WebSocket('ws://127.0.0.1:9091/');//服务器端口
+
+            socket.onopen = function(event)//开启连接事件
+            {
+                socket.send("nD[Browser][127.0.0.1:9091][CMD]:ClinetLogin");
+            };
+            socket.onmessage = function(event)
+            {
+                var getMsg = event.data;
+                var showMsg;
+                //alert(getMsg);  消息调试用
+                if(/^nD\[Server\]\[127.0.0.1:9091\]\[REP\]/.test(getMsg))//收到服务器回应
+                {
+                    showMsg = getMsg.replace('nD','<h5><span style="color: darkgreen">REPLY FROM:</span></h5>')
+                    $('<p>'+showMsg+'</p>').appendTo($('#showData'));
+                    $('.ctrl').css({'background-color':'ForestGreen','border-color':'ForestGreen'});
+                    $('#start').css({'background-color':'green','border-color':'green'});
+                }
+
+                if(/^users:/.test(getMsg))//收到同步用户表命令
+                {
+                    getMsg=getMsg.replace("users:","");
+                    getMsg=eval("("+getMsg+")");
+                    //alert(getMsg);
+                    document.getElementById("listusers").innerHTML="";
+                    for(var key in getMsg)
+                    {
+                        var option=document.createElement("OPTION");
+                        option.innerHTML=getMsg[key];//显示IP
+                        document.getElementById("listusers").appendChild(option);
+                    }
+                }
+
+                if(/^nD\[\w{1,20}\]\[\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}:\d{1,6}\]\[DATA\]/.test(getMsg))//收到数据信息127.0.0.1:9091
+                {
+                    showMsg=getMsg.replace('nD','<h5><span style="color: dodgerblue">MASSAGE FROM:</span></h5>');
+                    $('<p>'+showMsg+'</p>').appendTo($('#showData'));
+                }
+
+            };
+            socket.onclose = function(event)//关闭连接事件
+            {
+                isLogin=false;
+            }
+        }
+    }
+
+    function stop() //中断连接socket关闭
+    {
+        $('.ctrl').css({'background-color':'IndianRed','border-color':'IndianRed'});
+        $('#stop').css({'background-color':'Brown','border-color':'Brown'});
+
+        socket.close();
+        //alert($('#listusers').val());
+
+    }
+
+    function pause()//暂停显示
+    {
+        $('.ctrl').css({'background-color':'Gold','border-color':'Gold'});
+        $('#pause').css({'background-color':'GoldenRod','border-color':'GoldenRod'});
+
+    }
+    
+    function send() //内容发送
+    {
+        var sendText = $('#sendText').val();
+        var sendTo = selectDes.val();
+        var showMsg;
+
+        socket.send("nD[Browser][127.0.0.1:9091][DATA]:"+sendText);
+
+        showMsg = '<h5><span style="color: dodgerblue">SEND TO:</span></h5>'+'['+sendTo+'][DATA]'+sendText;;
+        $('<p>'+showMsg+'</p>').appendTo($('#showData'));
+
+        $('.ctrl').css({'background-color':'ForestGreen','border-color':'ForestGreen'});
+        $('#start').css({'background-color':'green','border-color':'green'});
+    }
+
+    function userLog() //用户验证
+    {
+        Code = $('#loginCode').val();
+
+        $.post(
+            '../usrlog.php',
+            {
+                'loginCode':Code,
+            },
+        function (res) {
+                if(res == 'success')
+                {
+                    islogin = true;
+                    $('#logClose').removeAttr('disabled');
+                }
+                else
+                {
+                    islogin = true;
+                    $('#logClose').removeAttr('disabled');
+                }
+            }
+        )
+    }
+    
+</script>
+</html>

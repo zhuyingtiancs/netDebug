@@ -1,0 +1,24 @@
+clinet:
+
+
+基本格式nD[<终端类型>][<接收IP端口>][<命令类型>]:<内容>
+
+<终端类型>
+1.Browser  浏览器
+2.Gprs  gprsDTU
+3.Server  服务器发送
+
+<命令类型>
+1.CMD  命令
+2.ERR  错误
+3.REP  服务端回复
+4.RQS  服务端请求
+5.DATA  普通数据
+ 
+1.登录
+clinet点击开始连接服务端发送以下内容
+同时发送nD[CMD]：ClinetLogin
+
+
+server:
+1.
